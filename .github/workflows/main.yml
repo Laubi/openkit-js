@@ -18,8 +18,8 @@ jobs:
      - uses: actions/checkout@v2
 
      - uses: borales/actions-yarn@v2.0.0
-         with:
-           cmd: install
+       with:
+         cmd: install
 
   lint:
     runs-on: ubuntu-latest
@@ -27,28 +27,28 @@ jobs:
       - uses: actions/checkout@v2
 
       - uses: borales/actions-yarn@v2.0.0
-          with:
-            cmd: install
+        with:
+          cmd: install
        - uses: borales/actions-yarn@v2.0.0
-           with:
-             cmd: lint
+         with:
+           cmd: lint
        - uses: borales/actions-yarn@v2.0.0
-           with:
-             cmd: lint:spec
+         with:
+           cmd: lint:spec
   docs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
 
       - uses: borales/actions-yarn@v2.0.0
-          with:
-            cmd: install
+        with:
+          cmd: install
        - uses: borales/actions-yarn@v2.0.0
-           with:
-             cmd: docs
+         with:
+           cmd: docs
        - uses: borales/actions-yarn@v2.0.0
-           with:
-             cmd: docs:markdown
+         with:
+           cmd: docs:markdown
 
 
 
