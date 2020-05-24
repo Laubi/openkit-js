@@ -13,3 +13,6 @@ dist
 # Examples - ignore them currently, but add them later
 examples
 docs
+
+.yarn
+.pnp.js
