@@ -2,9 +2,6 @@
   "extends": [
     "tslint:latest"
   ],
-  "rulesDirectory": [
-    "codelyzer"
-  ],
   "linterOptions": {
     "exclude": [
       "test/**/*"
